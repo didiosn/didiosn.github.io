@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faust ATHILEY — Développeur Web &amp; Mobile</title>
+<meta name="description" content="Portfolio de Faust Athiley, développeur web et mobile. 9 ans d'expérience en conception d'applications web et mobiles.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<meta property="og:title" content="Faust ATHILEY — Développeur Web &amp; Mobile">
+<meta property="og:description" content="Développeur web et mobile, 9 ans d'expérience. React, Vue, Angular, Laravel, Flutter. Disponible pour missions freelance en remote.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/New-Image-2-.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="loader"><div class="loader-bar"></div></div>
+
+<button id="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+
+<!-- ==================== SIDEBAR ==================== -->
+<header id="sidebar">
+    <div class="sidebar-inner">
+        <img class="profile-photo" src="assets/img/New-Image-2-.jpg" alt="Faust Athiley">
+        <h1 class="site-title">Faust ATHILEY</h1>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#/intro" data-page="intro"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Home</a></li>
+                <li><a href="#/about-me" data-page="about-me"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.34 0-10 1.67-10 5v3h20v-3c0-3.33-6.66-5-10-5z"/></svg>A propos</a></li>
+                <li><a href="#/resume" data-page="resume"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm4 18H6V4h7v5h5zM8 12h8v2H8zm0 4h8v2H8z"/></svg>Parcours</a></li>
+                <li><a href="#/portfolio" data-page="portfolio"><svg viewBox="0 0 24 24"><path d="M12 5C7 5 3.2 8 1 12c2.2 4 6 7 11 7s8.8-3 11-7c-2.2-4-6-7-11-7zm0 11a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6.5A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z"/></svg>Portfolio</a></li>
+                <li><a href="#/contact" data-page="contact"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg>Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="https://linkedin.com/in/faust-athiley/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 17V10.5H5.67V17zM7 9.23a1.73 1.73 0 1 0 0-3.46 1.73 1.73 0 0 0 0 3.46zM18.33 17v-3.61c0-1.93-1.03-2.83-2.4-2.83a2.08 2.08 0 0 0-1.88 1.03V10.5h-2.67V17h2.67v-3.84c0-1 .5-1.55 1.32-1.55s1.28.55 1.28 1.55V17z"/></svg></a>
+            <a href="https://github.com/didiosn" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.91c.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68a4.44 4.44 0 0 1 1.18-3.08 4.12 4.12 0 0 1 .11-3s.97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18a4.12 4.12 0 0 1 .11 3 4.44 4.44 0 0 1 1.18 3.08c0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.05.78 2.13v3.16c0 .31.2.68.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+            <a href="mailto:gdidiosn@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg></a>
+            <a href="tel:+22899225308" aria-label="Téléphone"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg></a>
+        </div>
+        <p class="copy-text">© 2026 Faust ATHILEY</p>
+    </div>
+</header>
+
+<!-- ==================== PAGES ==================== -->
+<main id="main">
+
+    <!-- INTRO -->
+    <section id="intro" class="pt-page has-bg" style="background-image:url('assets/img/pexels-photo.jpg')">
+        <div class="particles" aria-hidden="true"></div>
+        <div class="page-content intro-content">
+            <h4 class="intro-hello">Salut, je suis</h4>
+            <h2 class="intro-name">Faust Athiley,</h2>
+            <h4 class="intro-sub">votre <strong><span id="typist"></span><span class="cursor">|</span></strong></h4>
+            <p class="intro-status"><span class="status-dot"></span>Disponible pour missions freelance — remote</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about-me" class="pt-page">
+        <div class="page-content">
+            <h1 class="page-title"><svg viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-3.34 0-10 1.67-10 5v3h20v-3c0-3.33-6.66-5-10-5z"/></svg>A propos</h1>
+
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="assets/img/softtware-engineer.png" alt="Software engineer">
+                </div>
+                <div class="about-text">
+                    <h3>Je m'appelle Faust Athiley.</h3>
+                    <p>Spécialiste de la conception de sites web et d'applications mobiles avec <strong>9 ans d'expérience</strong>. Mon parcours diversifié m'a permis de développer des compétences clés en création d'interfaces utilisateur attrayantes et fonctionnelles, la maîtrise des langages de programmation et des outils de développement web et mobile, ainsi que la conception UX/UI.</p>
+                    <p>Depuis peu, je m'intéresse particulièrement à <strong>l'intelligence artificielle</strong> et à son intégration dans les produits numériques — j'ai notamment contribué à IA Analytics, une suite d'outils alimentés par l'IA pour améliorer la productivité.</p>
+                    <p>Mon objectif : continuer à innover dans le design numérique, en contribuant à des projets ambitieux qui ont un impact positif sur les utilisateurs et la société.</p>
+                </div>
+            </div>
+
+            <h3 class="sub-title">Work Process</h3>
+            <ul class="process-list">
+                <li>Discussion</li>
+                <li>Réflexions</li>
+                <li>Design</li>
+                <li>Développement</li>
+                <li>Test</li>
+                <li>Déploiement</li>
+            </ul>
+
+            <h3 class="sub-title">Hobbies</h3>
+            <ul class="hobby-list">
+                <li>Jeux vidéo</li>
+                <li>Voyage</li>
+                <li>Musique</li>
+                <li>Méditation</li>
+                <li>Activités culturelles</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="pt-page">
+        <div class="page-content">
+            <h1 class="page-title"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm4 18H6V4h7v5h5zM8 12h8v2H8zm0 4h8v2H8z"/></svg>Parcours</h1>
+
+            <div class="resume-cols">
+                <div class="resume-col">
+                    <h3 class="sub-title">Expériences</h3>
+                    <ul class="timeline">
+                        <li>
+                            <span class="t-date">Juil 2025 — Déc 2026</span>
+                            <h4>Développeur Web Front-End <em>(Freelance)</em></h4>
+                            <span class="t-place">DiotSiaci</span>
+                            <p>IA Analytics : suite d'outils alimentés par l'IA pour améliorer la productivité (ReactJS).</p>
+                        </li>
+                        <li>
+                            <span class="t-date">Déc 2023 — Aujourd'hui</span>
+                            <h4>Développeur Web Front-End <em>(Freelance)</em></h4>
+                            <span class="t-place">DoPédiatrie</span>
+                            <p>Hosman 3 : application complète de gestion d'un hôpital moyen (AngularJS).</p>
+                        </li>
+                        <li>
+                            <span class="t-date">Avr 2024 — Jan 2025</span>
+                            <h4>Développeur Web FullStack <em>(Remote)</em></h4>
+                            <span class="t-place">Observia</span>
+                            <p>Formaric (Laravel &amp; VueJS), NOA (Laravel &amp; ReactJS), Proxicare (Laravel &amp; VueJS) — applications e-santé.</p>
+                        </li>
+                        <li>
+                            <span class="t-date">Jan 2021 — Mar 2023</span>
+                            <h4>Développeur Web &amp; Mobile <em>(Freelance Remote)</em></h4>
+                            <span class="t-place">TheCodingMachine</span>
+                            <p>ToneoFirst (Flutter), Coopt and Smile (Laravel/Blade), Cyclevia (NuxtJS/Symfony), Oasys (ReactJS).</p>
+                        </li>
+                        <li>
+                            <span class="t-date">Nov 2015 — Jan 2018</span>
+                            <h4>Développeur Web <em>(Freelance Remote)</em></h4>
+                            <span class="t-place">Devidia — Toulouse</span>
+                            <p>Armagnac Castarède (Prestashop) ; Ushuaia Beauté, Soladis, AGO Formation (WordPress).</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="resume-col">
+                    <h3 class="sub-title">Education</h3>
+                    <ul class="timeline">
+                        <li>
+                            <span class="t-date">2018</span>
+                            <h4>Licence Informatique</h4>
+                            <span class="t-place">Architecture des logiciels — ESGIS</span>
+                        </li>
+                        <li>
+                            <span class="t-date">2008 — 2011</span>
+                            <h4>BTS Développement d'applications</h4>
+                            <span class="t-place">Institut Polytechnique DEFITECH — Lomé</span>
+                        </li>
+                    </ul>
+
+                    <a class="btn-cv" href="assets/CV-ATHILEY-FR.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+                </div>
+            </div>
+
+            <h3 class="sub-title">Skills</h3>
+            <ul class="skill-list">
+                <li>Agile</li><li>NoSQL</li><li>Linux</li>
+            </ul>
+            <ul class="logo-grid">
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="VueJS" title="VueJS"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" alt="NuxtJS" title="NuxtJS"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" title="Angular"></li>
+                <li><img src="assets/img/php-1.png" alt="PHP" title="PHP"></li>
+                <li><img src="assets/img/320px-LaravelLogo.png" alt="Laravel" title="Laravel"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" alt="Symfony" title="Symfony"></li>
+                <li><img src="assets/img/wordpress-1.png" alt="WordPress" title="WordPress"></li>
+                <li><img src="assets/img/prestashop-1.png" alt="Prestashop" title="Prestashop"></li>
+                <li><img src="assets/img/flutter.png" alt="Flutter / Dart" title="Flutter / Dart"></li>
+                <li><img src="assets/img/android-1.png" alt="Android" title="Android"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" title="Django"></li>
+                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker"></li>
+                <li><img src="assets/img/html-5.png" alt="HTML5" title="HTML5"></li>
+                <li><img src="assets/img/css-3-1.png" alt="CSS3" title="CSS3"></li>
+            </ul>
+
+            <h3 class="sub-title">Outils</h3>
+            <ul class="logo-grid">
+                <li><img src="assets/img/1024px-Android_Studio_icon.128.png" alt="Android Studio" title="Android Studio"></li>
+                <li><img src="assets/img/svgporn-phpstorm.png" alt="PhpStorm" title="PhpStorm"></li>
+                <li><img src="assets/img/svgporn-git.png" alt="Git" title="Git"></li>
+                <li><img src="assets/img/1051px-Adobe_Photoshop_CC_icon.128.png" alt="Photoshop" title="Photoshop"></li>
+                <li><img src="assets/img/svgporn-trello.png" alt="Trello" title="Trello"></li>
+                <li><img src="assets/img/cmder.png" alt="Cmder" title="Cmder"></li>
+            </ul>
+
+            <h3 class="sub-title">Témoignages</h3>
+            <div class="testimonials">
+                <blockquote>
+                    <img src="assets/img/eddy.jpg" alt="Eddy Beghennou">
+                    <p>« Dévoué, efficace et autonome, il ne manque pas de prendre des initiatives. Son professionnalisme sans faille lui a permis d'atteindre l'ensemble de ses objectifs. »</p>
+                    <cite>Eddy BEGHENNOU — CEO DEVIDIA TOULOUSE</cite>
+                </blockquote>
+                <blockquote>
+                    <img src="assets/img/pp.jpg" alt="Gabriel Nolla">
+                    <p>« Ce fut un plaisir de travailler avec lui, et les projets que nous avons mis sur pied ensemble ont souvent été appréciés par nos supérieurs. »</p>
+                    <cite>Gabriel Nolla — BACH Productions</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="pt-page">
+        <div class="page-content">
+            <h1 class="page-title"><svg viewBox="0 0 24 24"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-10 0V4h4v2z"/></svg>Portfolio</h1>
+
+            <ul class="filters">
+                <li><button class="filter-btn current" data-filter="*">Tous</button></li>
+                <li><button class="filter-btn" data-filter="webapp">Apps Web</button></li>
+                <li><button class="filter-btn" data-filter="android">Android</button></li>
+                <li><button class="filter-btn" data-filter="laravel">Laravel</button></li>
+                <li><button class="filter-btn" data-filter="prestashop">Prestashop</button></li>
+                <li><button class="filter-btn" data-filter="wordpress">Wordpress</button></li>
+            </ul>
+
+            <div class="portfolio-grid" id="portfolio-grid"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pt-page has-bg" style="background-image:url('assets/img/pexels-photo-1.jpg')">
+        <div class="page-content contact-content">
+            <h1 class="page-title light"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/></svg>Contact</h1>
+
+            <div class="contact-cards">
+                <a class="contact-card" href="mailto:gdidiosn@gmail.com">
+                    <span class="cc-label">Email</span>
+                    <span class="cc-value">gdidiosn@gmail.com</span>
+                </a>
+                <a class="contact-card" href="tel:+22899225308">
+                    <span class="cc-label">Téléphone</span>
+                    <span class="cc-value">+228 99 22 53 08</span>
+                </a>
+                <a class="contact-card" href="https://linkedin.com/in/faust-athiley/" target="_blank" rel="noopener">
+                    <span class="cc-label">LinkedIn</span>
+                    <span class="cc-value">faust-athiley</span>
+                </a>
+                <a class="contact-card" href="https://github.com/didiosn" target="_blank" rel="noopener">
+                    <span class="cc-label">GitHub</span>
+                    <span class="cc-value">didiosn</span>
+                </a>
+                <div class="contact-card">
+                    <span class="cc-label">Localisation</span>
+                    <span class="cc-value">Lomé, Togo</span>
+                </div>
+            </div>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
