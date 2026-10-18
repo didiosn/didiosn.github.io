@@ -162,26 +162,31 @@
 
     /* ---------- Contact ----------
        GitHub Pages = statique : pas de backend.
-       → Crée un compte gratuit sur https://formspree.io (ou web3forms.com),
-         colle l'endpoint ci-dessous pour un vrai formulaire.
-         En attendant : fallback mailto qui pré-remplit le mail. */
-    const FORM_ENDPOINT = ''; // ex: 'https://formspree.io/f/xxxxxxx'
+       FormSubmit.co : vrai formulaire sans compte. Au 1er envoi, un mail
+       d'activation part vers gdidiosn@gmail.com — cliquer le lien une fois.
+       Fallback mailto si l'API échoue. */
+    const FORM_ENDPOINT = 'https://formsubmit.co/ajax/gdidiosn@gmail.com';
     document.getElementById('contact-form').addEventListener('submit', e => {
         e.preventDefault();
         const f = e.target;
-        if (FORM_ENDPOINT) {
-            fetch(FORM_ENDPOINT, {
-                method: 'POST',
-                headers: { 'Accept': 'application/json' },
-                body: new FormData(f),
-            }).then(r => {
-                f.querySelector('button').textContent = r.ok ? 'Message envoyé ✓' : 'Erreur, réessayez';
-                if (r.ok) f.reset();
-            }).catch(() => { f.querySelector('button').textContent = 'Erreur, réessayez'; });
-        } else {
+        const btn = f.querySelector('button');
+        const data = new FormData(f);
+        data.append('_subject', `[Portfolio] Message de ${f.name.value}`);
+        data.append('_captcha', 'false');
+        btn.disabled = true;
+        btn.textContent = 'Envoi…';
+        fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: data,
+        }).then(r => {
+            btn.textContent = r.ok ? 'Message envoyé ✓' : 'Erreur, réessayez';
+            if (r.ok) f.reset();
+            btn.disabled = false;
+        }).catch(() => {
             const subject = encodeURIComponent(`[Portfolio] Message de ${f.name.value}`);
             const body = encodeURIComponent(`${f.message.value}\n\n— ${f.name.value} <${f.email.value}>`);
             window.location.href = `mailto:gdidiosn@gmail.com?subject=${subject}&body=${body}`;
-        }
+        });
     });
 })();
